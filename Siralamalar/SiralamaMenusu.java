@@ -1,5 +1,4 @@
 package Siralamalar;
-import java.awt.Menu;
 import java.util.Scanner;
 
 public class SiralamaMenusu {
@@ -42,6 +41,7 @@ public class SiralamaMenusu {
 
         switch (secim) {
             case 0:
+                System.out.print("\033\143"); // Ekrani temizle
                 System.out.println("Bir ust menuye donuluyor...");
                 break;
             case 1:
@@ -106,7 +106,11 @@ public class SiralamaMenusu {
                 //KovaSort.main(args);
                 break;
             default:
-                System.out.println("Lutfen 1-20 arasinda bir sayi giriniz.");
+                System.out.print("\033\143"); // Ekrani temizle
+                System.out.println("Lutfen 0 ile 20 arasinda bir sayi giriniz.");
+                SiralamaMenusu.main(args);
+                break;
+                
         }
     }
 }

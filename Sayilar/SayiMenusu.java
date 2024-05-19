@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 
 public class SayiMenusu {
+    
     public static void main(String[] args) {
         Scanner klavye = new Scanner(System.in);
         System.out.print("\033\143"); // Ekrani temizle
@@ -25,7 +26,7 @@ public class SayiMenusu {
         System.out.println("15 - Mersanne Sayilar");
         System.out.println("16 - Harshad Sayilar");
         System.out.println("17 - Cyclic (Döngusel Sayilar)");
-        System.out.println("18 - Tav Sayilar");
+        System.out.println("18 - Tam Sayilar");
         System.out.println("19 - Bagdaşik Sayilar (Amicable)");
         System.out.println("20 - 6174 sayisi");
         System.out.println("0 - Onceki menuye don");
@@ -45,8 +46,9 @@ public class SayiMenusu {
 
         switch (secim) {
             case 0:
-                System.out.println("Onceki menuye donuluyor.");
-                return;
+                System.out.print("\033\143"); // Ekrani temizle
+                System.out.println("Bir ust menuye donuluyor...");
+                break;
             case 1:
                 // Mukemmel Sayilar
                 // ...
@@ -128,7 +130,7 @@ public class SayiMenusu {
                 // ...
                 break;
             default:
-                System.out.println("Lutfen 1 ile 20 arasinda bir sayi giriniz.");
+                System.out.println("Lutfen 0 ile 20 arasinda bir sayi giriniz.");
                 SayiMenusu.main(args);
                 break;
             }
