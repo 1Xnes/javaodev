@@ -4,11 +4,12 @@ public class Menu {
     public static void main(String[] args) {
         Scanner klavye = new Scanner(System.in);
         int secim;
-
-        while (true) {
+        boolean devam=true;
+        while (devam==true) {
+            System.out.print("\033\143"); // Ekrani temizle
             System.out.println("Ana Menu:");
             System.out.println("Ogrenci numarasi: 202313171037\t Adi Soyadi: Enes Ayhan Benli");
-            System.out.println("Derse Kayitli Oldugu Ogretim Grubu (1.Öğretim)");
+            System.out.println("Derse Kayitli Oldugu Ogretim Grubu (1. Ogretim)");
             System.out.println("1-) Sayi Grubu Algoritmalari");
             System.out.println("2-) Siralama Algoritmalari");
             System.out.println("3-) Arama Algoritmalari");
@@ -21,33 +22,26 @@ public class Menu {
             }
             secim = klavye.nextInt();
             switch (secim) {
+                case 0:
+                    System.out.println("Programdan cikiliyor...");
+                    return;
                 case 1:
-                    sayiGrubu1();
+                    Sayilar.SayiMenusu.main(args);
                     break;
                 case 2:
-                    sayiGrubu2();
+                    Siralamalar.SiralamaMenusu.main(args);
                     break;
                 case 3:
-                    sayiGrubu3();
+                    Aramalar.AramaMenusu.main(args);
                     break;
-                case 0:
-                    System.out.println("Programdan çıkılıyor...");
-                    return;
+                
                 default:
-                    System.out.println("Geçersiz seçim. Lütfen tekrar deneyiniz.");
+                    System.out.println("Gecersiz secim. Lutfen tekrar deneyiniz.");
             }
+            System.out.println();
+            System.out.println("Devam etmek istiyor musunuz? (Evet=1, Hayir=0)");
+            devam = klavye.nextInt() == 1;
+            System.out.print("\033\143");
         }
-    }
-
-    private static void sayiGrubu1() {
-        // Sayı Grubu 1 için işlemleri buraya ekleyin
-    }
-
-    private static void sayiGrubu2() {
-        // Sayı Grubu 2 için işlemleri buraya ekleyin
-    }
-
-    private static void sayiGrubu3() {
-        // Sayı Grubu 3 için işlemleri buraya ekleyin
     }
 }
