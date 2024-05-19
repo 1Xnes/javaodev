@@ -34,4 +34,11 @@ public class GenelGecer {
             System.out.print(dizi[i] + " ");
         }
     }
+    public static int devamEt() {
+        System.out.println("Devam etmek ister misiniz?");
+        System.out.println("1- Evet ");
+        System.out.println("2- Hayir ");
+        int secim= Aletler.GenelGecer.tamsayiAl();
+        return secim;
+    }
 }

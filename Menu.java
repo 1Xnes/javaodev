@@ -17,7 +17,6 @@ public class Menu {
             System.out.println("2-) Siralama Algoritmalari");
             System.out.println("3-) Arama Algoritmalari");
             System.out.println("0-) Cikis");
-            System.out.print("Seciminizi giriniz: ");
             //iki farklı kontrol olmasının sebebi kullanıcının tam sayı girmesinin gerekmesi alt satır onu sağlıyor
             //switchteki kontrol ise girilen sayının istediğimiz tam sayılar arasında olup olmadıgını kontrol ediyor
             secim= Aletler.GenelGecer.tamsayiAl();
