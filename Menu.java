@@ -39,8 +39,6 @@ public class Menu {
                     System.out.println("Gecersiz secim. Lutfen tekrar deneyiniz.");
             }
             System.out.println();
-            System.out.println("Devam etmek istiyor musunuz? (Evet=1, Hayir=0)");
-            devam = klavye.nextInt() == 1;
             System.out.print("\033\143");
         }
     }
