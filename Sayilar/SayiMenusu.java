@@ -6,7 +6,7 @@ public class SayiMenusu {
     
     public static void main(String[] args) {
         Scanner klavye = new Scanner(System.in);
-        System.out.print("\033\143"); // Ekrani temizle
+        
         System.out.println("Sayi Menusu Acildi!");
         System.out.println("Calistirmak istediginiz sayi grubunu seciniz.");
         System.out.println("1 - Mukemmel Sayilar");
@@ -30,28 +30,15 @@ public class SayiMenusu {
         System.out.println("19 - Bagdaşik Sayilar (Amicable)");
         System.out.println("20 - 6174 sayisi");
         System.out.println("0 - Onceki menuye don");
-
-        System.out.print("Seciminizi giriniz: ");
-        int secim;
-        do {
-            System.out.print("Seciminizi giriniz: ");
-            if (!klavye.hasNextInt()) {
-                System.out.println("Lutfen bir tamsayi giriniz.");
-                klavye.nextLine(); // Boş bir satiri atlayarak klavyeden kalan verileri temizle
-            } else {
-                secim = klavye.nextInt();
-                break;
-            }
-        } while (true);
+        int secim= Aletler.GenelGecer.tamsayiAl();
 
         switch (secim) {
             case 0:
-                System.out.print("\033\143"); // Ekrani temizle
+                
                 System.out.println("Bir ust menuye donuluyor...");
                 break;
             case 1:
-                // Mukemmel Sayilar
-                // ...
+                Sayilar.MukemmelSayilar.main(args);
                 break;
             case 2:
                 // Fibonacci Sayilari (a) Recursive olarak b) standart caliştirma
@@ -130,6 +117,7 @@ public class SayiMenusu {
                 // ...
                 break;
             default:
+                
                 System.out.println("Lutfen 0 ile 20 arasinda bir sayi giriniz.");
                 SayiMenusu.main(args);
                 break;

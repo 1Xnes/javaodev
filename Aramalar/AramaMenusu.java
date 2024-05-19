@@ -2,7 +2,7 @@ package Aramalar;
 import java.util.Scanner;
 public class AramaMenusu {
     public static void main(String[] args) {
-        //System.out.print("\033\143"); // Ekrani temizle
+        
         System.out.println("Arama Menusu Acildi!");
         System.out.println("1- Doğrusal Arama (Linear Search)");
         System.out.println("2- İkili arama (binary search)");
@@ -20,22 +20,11 @@ public class AramaMenusu {
         System.out.println("14- Horspool Arama Algoritması");
         System.out.println("15- Kaba Kuvvet Metin Arama Algoritması (Brute Force Text Search, Linear Text Search)");
         System.out.println("0- Ana Menuye Don");
-        Scanner klavye = new Scanner(System.in);
-        int secim;
-        do {
-            System.out.print("Seciminizi giriniz: ");
-            if (!klavye.hasNextInt()) {
-                System.out.println("Lutfen bir tamsayi giriniz.");
-                klavye.nextLine(); // Boş bir satiri atlayarak klavyeden kalan verileri temizle
-            } else {
-                secim = klavye.nextInt();
-                break;
-            }
-        } while (true);
+        int secim= Aletler.GenelGecer.tamsayiAl();
 
         switch (secim) {
             case 0:
-                System.out.print("\033\143"); // Ekrani temizle
+                
                 System.out.println("Bir ust menuye donuluyor...");
                 break;
             case 1:
@@ -84,7 +73,7 @@ public class AramaMenusu {
                 System.out.println("15- Kaba Kuvvet Metin Arama Algoritması (Brute Force Text Search, Linear Text Search)");
                 break;
             default:
-                System.out.print("\033\143"); // Ekrani temizle
+                
                 System.out.println("Lutfen 1-15 arasinda bir sayi giriniz.");
                 AramaMenusu.main(args);
                 break;

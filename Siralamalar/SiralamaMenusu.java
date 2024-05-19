@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class SiralamaMenusu {
     public static void main(String[] args) {
-        System.out.print("\033\143"); // Ekrani temizle
+        
         System.out.println("Siralama Menusu Acildi!");
         System.out.println("1- Insertion Sort (Eklemeli Sıralama )");
         System.out.println("2- Selection Sort (Seçmeli Sıralama)");
@@ -26,22 +26,11 @@ public class SiralamaMenusu {
         System.out.println("19- Strand Sort");
         System.out.println("20- Kova Sort");
         System.out.println("0- Ana Menuye Don");
-        Scanner klavye = new Scanner(System.in);
-        int secim;
-        do {
-            System.out.print("Seciminizi giriniz: ");
-            if (!klavye.hasNextInt()) {
-                System.out.println("Lutfen bir tamsayi giriniz.");
-                klavye.nextLine(); // Boş bir satiri atlayarak klavyeden kalan verileri temizle
-            } else {
-                secim = klavye.nextInt();
-                break;
-            }
-        } while (true);
+        int secim= Aletler.GenelGecer.tamsayiAl();
 
         switch (secim) {
             case 0:
-                System.out.print("\033\143"); // Ekrani temizle
+                
                 System.out.println("Bir ust menuye donuluyor...");
                 break;
             case 1:
@@ -106,7 +95,7 @@ public class SiralamaMenusu {
                 //KovaSort.main(args);
                 break;
             default:
-                System.out.print("\033\143"); // Ekrani temizle
+                
                 System.out.println("Lutfen 0 ile 20 arasinda bir sayi giriniz.");
                 SiralamaMenusu.main(args);
                 break;

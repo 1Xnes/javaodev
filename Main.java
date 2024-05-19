@@ -6,8 +6,8 @@ public class Main {
             
             // dizi alma metodolojisi
             //System.out.println("Hadi bir dizi cagiralim!");
-            //int[] dizi = Aletler.DiziAl.diziAl();
-            //Aletler.DiziYazdir.diziYazdir(dizi);
+            //int[] dizi = Aletler.GenelGecer.diziAl();
+            //Aletler.GenelGecer.diziYazdir(dizi);
             
             Menu.main(args);
             
