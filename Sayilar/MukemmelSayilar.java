@@ -24,12 +24,12 @@ public class MukemmelSayilar {
             default:
                 
                 System.out.println("Hatali giris yaptiniz. Lutfen 1 veya 2 giriniz.");
-                Sayilar.MukemmelSayilar.main(args);
+                main(args);
                 break;
         }
         secim = Aletler.GenelGecer.devamEt();
         if (secim == 1) {
-            Sayilar.MukemmelSayilar.main(args);
+            main(args);
         }
         else{
             System.out.println("Ana menuye donuluyor...");

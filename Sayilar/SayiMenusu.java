@@ -41,80 +41,76 @@ public class SayiMenusu {
                 Sayilar.MukemmelSayilar.main(args);
                 break;
             case 2:
-                // Fibonacci Sayilari (a) Recursive olarak b) standart caliştirma
-                // ...
+                Sayilar.FibonacciSayilar.main(args);
                 break;
             case 3:
-                // Armstrong sayisi
-                // ...
+                Sayilar.ArmstrongSayilar.main(args);
                 break;
             case 4:
-                // Tribonacci Sayilar
-                // ...
+                Sayilar.TribonacciSayilar.main(args);
                 break;
             case 5:
-                // Palindrom Sayilar
-                // ...
+                Sayilar.PalindromSayilar.main(args);
                 break;
             case 6:
                 // Cullen Sayilari
-                // ...
+                
                 break;
             case 7:
                 // Lasa Sayisi
-                // ...
+                
                 break;
             case 8:
                 // Fermat sayilari
-                // ...
+                
                 break;
             case 9:
                 // Dost Sayilar
-                // ...
+                
                 break;
             case 10:
                 // Zengin Sayilar
-                // ...
+                
                 break;
             case 11:
                 // Lucas Serisi
-                // ...
+                
                 break;
             case 12:
                 // Tetranacci Sayilar
-                // ...
+                
                 break;
             case 13:
                 // Ikiz Sayilar
-                // ...
+                
                 break;
             case 14:
                 // Weodal Sayilar
-                // ...
+                
                 break;
             case 15:
                 // Mersanne Sayilar
-                // ...
+                
                 break;
             case 16:
                 // Harshad Sayilar
-                // ...
+                
                 break;
             case 17:
                 // Cyclic (Döngusel Sayilar)
-                // ...
+                
                 break;
             case 18:
                 // Tav Sayilar
-                // ...
+                
                 break;
             case 19:
                 // Bagdaşik Sayilar (Amicable)
-                // ...
+                
                 break;
             case 20:
                 // 6174 sayisi
-                // ...
+                
                 break;
             default:
                 
