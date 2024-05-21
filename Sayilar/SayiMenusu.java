@@ -56,7 +56,7 @@ public class SayiMenusu {
                 Sayilar.CullenSayilar.main(args);
                 break;
             case 7:
-                // Lasa Sayisi
+                Sayilar.LasaSayilar.main(args);
                 
                 break;
             case 8:

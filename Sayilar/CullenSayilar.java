@@ -10,7 +10,7 @@ public class CullenSayilar {
         System.out.println("Cullen sayilar programina hosgeldiniz!");
         System.out.println("Cullen sayilari formu n*2n+1 olan sayilardir");
         System.out.println("Ilk birkac cullen sayisi: 1, 3, 9, 25, 65, 161, 385, 897...");
-        System.out.print("Lutfen bir sayi giriniz: ");
+        System.out.print("Lutfen bir sayi giriniz(n sayisi): ");
         Scanner klavye = new Scanner(System.in);
         int sayi = klavye.nextInt();
         /* cullen sayisini bulma islemi */
