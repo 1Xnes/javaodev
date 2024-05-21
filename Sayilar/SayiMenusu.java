@@ -117,5 +117,6 @@ public class SayiMenusu {
                 SayiMenusu.main(args);
                 break;
             }
+            main(args);
     }
 }

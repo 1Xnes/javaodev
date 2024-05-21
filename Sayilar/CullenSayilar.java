@@ -21,7 +21,7 @@ public class CullenSayilar {
         if (secim == 1) {
             main(args);
         } else {
-            System.out.println("Ana menuye donulyor...");
+            System.out.println("Bir ust menuye donulyor...");
         }   
     }
 

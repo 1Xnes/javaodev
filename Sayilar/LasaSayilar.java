@@ -24,7 +24,7 @@ public class LasaSayilar {
         if (secim == 1) {
             main(args);
         } else {
-            System.out.println("Ana menuye donuluyor...");
+            System.out.println("Bir ust menuye donuluyor...");
         }
         
     }

@@ -17,7 +17,7 @@ public class ArmstrongSayilar {
             main(args);
         }
         else{
-            System.out.println("Ana menuye donuluyor...");
+            System.out.println("Bir ust menuye donuluyor...");
         }
 
 

@@ -25,7 +25,7 @@ public class FibonacciSayilar {
         if (secim == 1) {
             FibonacciSayilar.main(args);
         } else {
-            System.out.println("Ana menuye donuluyor...");
+            System.out.println("Bir ust menuye donuluyor...");
         }
 
         
