@@ -60,8 +60,7 @@ public class SayiMenusu {
                 
                 break;
             case 8:
-                // Fermat sayilari
-                
+                Sayilar.FermatSayilar.main(args);
                 break;
             case 9:
                 // Dost Sayilar
