@@ -19,6 +19,7 @@ public class PalindromSayilar {
     }
     public static void palindromSayiKontrolu() {
         // Girilen sayinin palindrom sayi olup olmadigini kontrol eder.
+        // Ben string methodlarini kullanarak yaptim cunku daha kolaydi.
         int sayi, toplam = 0;
         Scanner klavye = new Scanner(System.in);
         System.out.print("Bir sayi giriniz: ");
