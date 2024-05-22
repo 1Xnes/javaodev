@@ -66,16 +66,13 @@ public class SayiMenusu {
                 Sayilar.DostSayilar.main(args);
                 break;
             case 10:
-                // Zengin Sayilar
-                
+                Sayilar.ZenginSayilar.main(args);
                 break;
             case 11:
-                // Lucas Serisi
-                
+                Sayilar.LucasSayilari.main(args);
                 break;
             case 12:
                 // Tetranacci Sayilar
-                
                 break;
             case 13:
                 // Ikiz Sayilar
@@ -115,6 +112,9 @@ public class SayiMenusu {
                 SayiMenusu.main(args);
                 break;
             }
+            if(secim!=0){
             main(args);
+            }
+            System.out.print("\033\143"); // Ekrani temizle
     }
 }

@@ -37,9 +37,7 @@ public class ZenginSayilar {
             }
         }
  
-        // A number n is said to be Abundant Number if
-        // sum of all the proper divisors of the number
-        // is greater than the value of the number n.
+        // sayinin bolenleri toplami kendisinden buyukse:
         if (toplam > n) {
             System.out.println(n + " sayisi zengin bir sayidir.");
         }
