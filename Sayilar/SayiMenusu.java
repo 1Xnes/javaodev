@@ -63,8 +63,7 @@ public class SayiMenusu {
                 Sayilar.FermatSayilar.main(args);
                 break;
             case 9:
-                // Dost Sayilar
-                
+                Sayilar.DostSayilar.main(args);
                 break;
             case 10:
                 // Zengin Sayilar
