@@ -28,7 +28,7 @@ public class LasaSayilar {
         }
         
     }
-    private static boolean asalMi(int sayi) {
+    public static boolean asalMi(int sayi) {
         for (int i = 2; i < sayi/2; i++) {
             if (sayi % i == 0) {
                 return false;

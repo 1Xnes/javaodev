@@ -72,23 +72,19 @@ public class SayiMenusu {
                 Sayilar.LucasSayilari.main(args);
                 break;
             case 12:
-                // Tetranacci Sayilar
+                Sayilar.TetranacciSayilar.main(args);
                 break;
             case 13:
-                // Ikiz Sayilar
-                
+                Sayilar.IkizSayilar.main(args);
                 break;
             case 14:
-                // Weodal Sayilar
-                
+                Sayilar.WeodalSayilar.main(args);
                 break;
             case 15:
-                // Mersanne Sayilar
-                
+                Sayilar.MersanneSayilar.main(args);
                 break;
             case 16:
-                // Harshad Sayilar
-                
+                Sayilar.HarshadSayilar.main(args);
                 break;
             case 17:
                 // Cyclic (Döngusel Sayilar)
@@ -116,5 +112,6 @@ public class SayiMenusu {
             main(args);
             }
             System.out.print("\033\143"); // Ekrani temizle
+            System.out.println("Ana menuye donuluyor...");
     }
 }
