@@ -28,13 +28,13 @@ public class AramaMenusu {
                 System.out.println("Bir ust menuye donuluyor...");
                 break;
             case 1:
-                System.out.println("1- Doğrusal Arama (Linear Search)");
+                LinearSearch.main(args);
                 break;
             case 2:
-                System.out.println("2- İkili arama (binary search)");
+                BinarySearch.main(args);
                 break;
             case 3:
-                System.out.println("3- Interpolasyon Araması (Ara değer araması, Interpolation Search)");
+                InterpolationSearch.main(args);
                 break;
             case 4:
                 System.out.println("4- Şekiller (graflar (Graphs) ) içinde çalışan algoritmalar");
@@ -78,6 +78,12 @@ public class AramaMenusu {
                 AramaMenusu.main(args);
                 break;
         }
+        if(secim!=0){
+            main(args);
+            }
+            System.out.print("\033\143"); // Ekrani temizle
+            System.out.println("Ana menuye donuluyor...");
+        
             
 
     }

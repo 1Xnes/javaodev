@@ -104,5 +104,5 @@ public class SiralamaMenusu {
             }
             System.out.print("\033\143"); // Ekrani temizle
             System.out.println("Ana menuye donuluyor...");
-    }
+        }
 }
