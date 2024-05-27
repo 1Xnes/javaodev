@@ -38,64 +38,64 @@ public class SayiMenusu {
                 System.out.println("Bir ust menuye donuluyor...");
                 break;
             case 1:
-                Sayilar.MukemmelSayilar.main(args);
+                MukemmelSayilar.main(args);
                 break;
             case 2:
-                Sayilar.FibonacciSayilar.main(args);
+                FibonacciSayilar.main(args);
                 break;
             case 3:
-                Sayilar.ArmstrongSayilar.main(args);
+                ArmstrongSayilar.main(args);
                 break;
             case 4:
-                Sayilar.TribonacciSayilar.main(args);
+                TribonacciSayilar.main(args);
                 break;
             case 5:
-                Sayilar.PalindromSayilar.main(args);
+                PalindromSayilar.main(args);
                 break;
             case 6:
-                Sayilar.CullenSayilar.main(args);
+                CullenSayilar.main(args);
                 break;
             case 7:
-                Sayilar.LasaSayilar.main(args);
+                LasaSayilar.main(args);
                 break;
             case 8:
-                Sayilar.FermatSayilar.main(args);
+                FermatSayilar.main(args);
                 break;
             case 9:
-                Sayilar.DostSayilar.main(args);
+                DostSayilar.main(args);
                 break;
             case 10:
-                Sayilar.ZenginSayilar.main(args);
+                ZenginSayilar.main(args);
                 break;
             case 11:
-                Sayilar.LucasSayilari.main(args);
+                LucasSayilari.main(args);
                 break;
             case 12:
-                Sayilar.TetranacciSayilar.main(args);
+                TetranacciSayilar.main(args);
                 break;
             case 13:
-                Sayilar.IkizSayilar.main(args);
+                IkizSayilar.main(args);
                 break;
             case 14:
-                Sayilar.WeodalSayilar.main(args);
+                WeodalSayilar.main(args);
                 break;
             case 15:
-                Sayilar.MersanneSayilar.main(args);
+                MersanneSayilar.main(args);
                 break;
             case 16:
-                Sayilar.HarshadSayilar.main(args);
+                HarshadSayilar.main(args);
                 break;
             case 17:
-                Sayilar.DonguselSayilar.main(args);
+                DonguselSayilar.main(args);
                 break;
             case 18:
-                Sayilar.TauSayilar.main(args);
+                TauSayilar.main(args);
                 break;
             case 19:
-                Sayilar.BagdasikSayilar.main(args);
+                BagdasikSayilar.main(args);
                 break;
             case 20:
-                Sayilar.Alti174Sayilar.main(args);
+                Alti174Sayilar.main(args);
                 break;
             default:
                 

@@ -5,7 +5,7 @@ public class GenelGecer {
     public static int[] diziAl() {
         
         Scanner klavye = new Scanner(System.in);
-        System.out.print("Dizinin uzunligini giriniz: ");
+        System.out.print("Dizinin uzunlugunu giriniz: ");
         int uzunluk = klavye.nextInt();
         int[] dizi = new int[uzunluk];
         System.out.println("Dizinin elemanlarini giriniz: ");

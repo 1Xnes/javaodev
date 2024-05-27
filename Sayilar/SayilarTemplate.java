@@ -2,7 +2,7 @@ package Sayilar;
 
 import java.util.Scanner;
 
-public class Template {
+public class SayilarTemplate {
     /*
      * Template
      */
