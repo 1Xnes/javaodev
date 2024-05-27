@@ -7,10 +7,11 @@ public class AramalarTemplate {
      */
 
     public static void main(String[] args) {
-        System.out.println("Template sayilar programina hosgeldiniz!");
-        System.out.println("template sayidirlar");
-        System.out.println("Ornegin: ... sayilarindadir");
-        System.out.print("?\nSayiniz: ");
+        System.out.println("Template  programina hosgeldiniz!");
+        System.out.println("template :");
+        System.out.println("Oncelikle dizimizi alalim...");
+        int[] dizi = Aletler.GenelGecer.diziAl();
+        System.out.println("Simdi de hangi elemani arayalim giriniz:");
         Scanner klavye = new Scanner(System.in);
         int sayi = klavye.nextInt();
         
