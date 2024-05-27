@@ -1,5 +1,5 @@
 package Sayilar;
-
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class DonguselSayilar {
@@ -16,7 +16,11 @@ public class DonguselSayilar {
         System.out.print("Gireceginiz sayinin dongusel olup olmadigini kontrol edelim.?\nSayiniz: ");
         Scanner klavye = new Scanner(System.in);
         int sayi = klavye.nextInt();
-        
+        if (donguselMi(sayi)) {
+            System.out.println(sayi + " bir dongusel sayidir");
+        } else {
+            System.out.println(sayi + " bir dongusel sayi degildir");
+        }
 
         int secim = Aletler.GenelGecer.devamEt();
         if (secim == 1) {
@@ -29,47 +33,34 @@ public class DonguselSayilar {
         
     }
     public static boolean donguselMi(long N) {
-        // Rakam sayısını ve tüm rakamların aynı olup olmadığını kontrol eder.
-        long sayi = N;
-        int sayac = 0;
-        int hane = (int)(sayi % 10);
-        boolean hepsiAyni = true;
-        while (sayi > 0) {
-            sayac++;
-            if (sayi % 10 != hane)
-                hepsiAyni = false;
-            sayi = sayi / 10;
-        }
-    
-        // Tüm rakamlar aynı ise, dongusel sayı olarak kabul edilmez.
-        if (hepsiAyni == true)
-            return false;
-    
-        // Eğer rakam sayısı çift ve iki yarım aynı ise, dongusel sayı olarak kabul edilmez.
-        if (sayac % 2 == 0) {
-            long halfPower = (long)Math.pow(10, sayac / 2);
-            long firstHalf = N % halfPower;
-            long secondHalf = N / halfPower;
-            if (firstHalf == firstHalf && donguselMi(firstHalf))
+        // N sayısını string olarak al
+        String numStr = Long.toString(N);
+        int len = numStr.length();
+
+        // 2'den n'e kadar çarpanlarını kontrol et
+        for (int i = 2; i <= len; i++) {
+            long multiple = N * i;
+            if (!permutasyonuMu(numStr, Long.toString(multiple))) {
                 return false;
+            }
         }
-    
-        sayi = N;
-        while (true) {
-            // Aşağıdaki üç satır, bir sayının döngüsel bir şekilde döndürülmesini sağlar.
-            long rem = sayi % 10;
-            long div = sayi / 10;
-            sayi = (long)(Math.pow(10, sayac - 1)) * rem + div;
-    
-            // Tüm döngüsel dönüşler kontrol edildiğinde ve orijinal sayı döndürüldüğünde döngüden çıkılır.
-            if (sayi == N)
-                break;
-    
-            if (sayi % N != 0)
-                return false;
-        }
-    
+
         return true;
+    }
+
+    public static boolean permutasyonuMu(String a, String b) {
+        // Eğer uzunluklar farklıysa, permütasyon olamaz
+        if (a.length() != b.length()) {
+            return false;
+        }
+
+        // Karakterleri sıralayıp karşılaştır
+        char[] aChars = a.toCharArray();
+        char[] bChars = b.toCharArray();
+        Arrays.sort(aChars);
+        Arrays.sort(bChars);
+
+        return Arrays.equals(aChars, bChars);
     }
 
 }

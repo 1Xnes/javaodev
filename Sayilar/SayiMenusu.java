@@ -57,7 +57,6 @@ public class SayiMenusu {
                 break;
             case 7:
                 Sayilar.LasaSayilar.main(args);
-                
                 break;
             case 8:
                 Sayilar.FermatSayilar.main(args);
@@ -87,20 +86,16 @@ public class SayiMenusu {
                 Sayilar.HarshadSayilar.main(args);
                 break;
             case 17:
-                // Cyclic (Döngusel Sayilar)
-                
+                Sayilar.DonguselSayilar.main(args);
                 break;
             case 18:
-                // Tav Sayilar
-                
+                Sayilar.TauSayilar.main(args);
                 break;
             case 19:
-                // Bagdaşik Sayilar (Amicable)
-                
+                Sayilar.BagdasikSayilar.main(args);
                 break;
             case 20:
-                // 6174 sayisi
-                
+                Sayilar.Alti174Sayilar.main(args);
                 break;
             default:
                 
