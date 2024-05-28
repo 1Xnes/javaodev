@@ -40,22 +40,22 @@ public class AramaMenusu {
                 System.out.println("Sekiller icinde calisan algoritmalar Dijkstra's ve Bellman-Ford gibi algoritmalardir, lutfen onlardan birini seciniz.");
                 break;
             case 5:
-                System.out.println("5- Sabit Maliyetli Arama (Uniform Cost Search)");
+                UniformCostSearch.main(args); //graflı
                 break;
             case 6:
-                System.out.println("6- Floyd Warshall algoritması");
+                FloydWarshall.main(args); //graflı
                 break;
             case 7:
-                System.out.println("7- Prim’s Algoritması");
+                Prims.main(args); //graflı
                 break;
             case 8:
                 System.out.println("8- Kruskal Algoritması");
                 break;
             case 9:
-                System.out.println("9- Dijkstra Algoritması");
+                System.out.println("9- Dijkstra Algoritması"); //graflı
                 break;
             case 10:
-                System.out.println("10- Bellman Ford Algoritması");
+                System.out.println("10- Bellman Ford Algoritması"); //graflı
                 break;
             case 11:
                 System.out.println("11- İkili arama ağacı (Binary Search Tree)");
