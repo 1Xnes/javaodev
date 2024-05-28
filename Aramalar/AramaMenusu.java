@@ -37,7 +37,7 @@ public class AramaMenusu {
                 InterpolationSearch.main(args);
                 break;
             case 4:
-                System.out.println("Sekiller icinde calisan algoritmalar Dijkstra's ve Bellman-Ford gibi algoritmalardir, lutfen onlardan birini seciniz.");
+                System.out.println("Sekiller icinde calisan algoritmalar Uniform Cost Search, Floyd Warshall, Prim, Kruskal, Dijkstra, Bellman Ford, Binary Search Tree gibi algoritmalardir, lutfen onlardan birini seciniz.");
                 break;
             case 5:
                 UniformCostSearch.main(args); //graflı
@@ -49,25 +49,25 @@ public class AramaMenusu {
                 Prims.main(args); //graflı
                 break;
             case 8:
-                System.out.println("8- Kruskal Algoritması");
+                Kruskal.main(args); //graflı
                 break;
             case 9:
-                System.out.println("9- Dijkstra Algoritması"); //graflı
+                Dijkstra.main(args); //graflı
                 break;
             case 10:
-                System.out.println("10- Bellman Ford Algoritması"); //graflı
+                BellmanFord.main(args); //graflı
                 break;
             case 11:
-                System.out.println("11- İkili arama ağacı (Binary Search Tree)");
+                BinarySearchTree.main(args); // graflı
                 break;
             case 12:
-                System.out.println("12- Prüfer dizilimi");
+                Prufer.main(args);
                 break;
             case 13:
-                System.out.println("13- Metin arama algoritmaları (bir yazı içerisinde belirli bir dizgiyi (string) arayan algoritmalar)");
+                StrArayicilar.main(args);
                 break;
             case 14:
-                System.out.println("14- Horspool Arama Algoritması");
+                Horspool.main(args);
                 break;
             case 15:
                 System.out.println("15- Kaba Kuvvet Metin Arama Algoritması (Brute Force Text Search, Linear Text Search)");
