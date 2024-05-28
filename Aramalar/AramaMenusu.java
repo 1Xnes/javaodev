@@ -70,7 +70,7 @@ public class AramaMenusu {
                 Horspool.main(args);
                 break;
             case 15:
-                System.out.println("15- Kaba Kuvvet Metin Arama Algoritması (Brute Force Text Search, Linear Text Search)");
+                BruteForce.main(args);
                 break;
             default:
                 

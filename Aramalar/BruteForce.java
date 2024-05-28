@@ -1,28 +1,35 @@
 package Aramalar;
-
 import java.util.Scanner;
 
 public class BruteForce {
-    /*
-     * Bruteforce de secenekeleri tek tek deneyerek yapildigindan linear search'e gerekir.
-     */
+   
 
     public static void main(String[] args) {
-        System.out.println("Bruteforce Arama programina hosgeldiniz!");
-        System.out.println("Brute Force Arama :");
-        System.out.println("Oncelikle dizimizi alalim...");
-        int[] dizi = Aletler.GenelGecer.diziAl();
-        System.out.print("Simdi de hangi elemani arayalim giriniz:");
+        System.out.println("Kelime Arama Programina hosgeldiniz!");
+        System.out.println("Brute Force Arama : secenekleri tek tek deneyerek bulan algoritmadir.");
+        String[] kelimeler = {"elma", "armut", "muz", "çilek", "kiraz"}; // Kelime listesi
+        System.out.println("Oncelikle listemizi yazdiralim..");
+
+        for (String kelime : kelimeler) {
+            System.out.println(kelime);
+        }
+
         Scanner klavye = new Scanner(System.in);
-        int sayi = klavye.nextInt();
-        
-        // Brute force arama algoritması
-        int index = bruteForceArama(dizi, sayi);
-        
-        if (index != -1) {
-            System.out.println("Aradiginiz sayi " + sayi + " dizinin " + index + ". indeksinde bulundu.");
+        System.out.print("Aranacak kelimeyi giriniz: ");
+        String arananKelime = klavye.nextLine();
+
+        boolean bulundu = false;
+        for (String kelime : kelimeler) {
+            if (kelime.equalsIgnoreCase(arananKelime)) { // Kelime bulundu
+                bulundu = true;
+                break;
+            }
+        }
+
+        if (bulundu) {
+            System.out.println("Aranan kelime '" + arananKelime + "' listede mevcut.");
         } else {
-            System.out.println("Aradiginiz sayi " + sayi + " dizide bulunamadi.");
+            System.out.println("Aranan kelime '" + arananKelime + "' listede bulunamadı.");
         }
 
         int secim = Aletler.GenelGecer.devamEt();
@@ -33,14 +40,5 @@ public class BruteForce {
             System.out.print("\033\143"); // Ekrani temizle
             System.out.println("Bir ust menuye donuluyor...");
         }
-    }
-
-    public static int bruteForceArama(int[] dizi, int sayi) {
-        for (int i = 0; i < dizi.length; i++) {
-            if (dizi[i] == sayi) {
-                return i;
-            }
-        }
-        return -1;
     }
 }
