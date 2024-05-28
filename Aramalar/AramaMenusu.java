@@ -37,7 +37,7 @@ public class AramaMenusu {
                 InterpolationSearch.main(args);
                 break;
             case 4:
-                System.out.println("4- Şekiller (graflar (Graphs) ) içinde çalışan algoritmalar");
+                System.out.println("Sekiller icinde calisan algoritmalar Dijkstra's ve Bellman-Ford gibi algoritmalardir, lutfen onlardan birini seciniz.");
                 break;
             case 5:
                 System.out.println("5- Sabit Maliyetli Arama (Uniform Cost Search)");
