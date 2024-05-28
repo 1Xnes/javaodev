@@ -9,7 +9,7 @@ public class ZenginSayilar {
 
     public static void main(String[] args) {
         System.out.println("Zengin sayilar programina hosgeldiniz!");
-        System.out.println("Zengin sayilar kendisi haric pozitif tam sayi bolenleri toplami kendisinden buyuk olan sayidirlar");
+        System.out.println("Zengin sayilar kendisi haric pozitif tam sayi bolenleri toplami kendisinden buyuk olan sayilardir");
         System.out.println("Ornegin: 12, 18, 20, 24, 36 sayilarindadir");
         System.out.print("Hangi sayi zengin mi degil mi diye bakalim?\nSayiniz: ");
         Scanner klavye = new Scanner(System.in);
